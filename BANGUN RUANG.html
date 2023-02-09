@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class bangun_ruang{
+            volume(){}
+        }
+
+        class balok extends bangun_ruang {
+            panjang 
+            lebar
+            tinggi
+
+            volume(){
+                return this.panjang * this.lebar * this.tinggi;
+            }
+        }
+            var balok1 = new balok();
+            balok1.panjang = 9
+            balok1.lebar = 7
+            balok1.tinggi = 5
+
+            document.write("volume balok : " + balok1.volume() + '<br />');
+
+        class kubus {
+            s
+            volume(){
+                return this.s * this.s * this.s; 
+            }
+        }    
+            var kubus1 = new kubus();
+            kubus1.s = 8
+            kubus1.s = 9
+            kubus1.s = 3
+
+            document.write("volume kubus : " + kubus1.volume() + '<br />');
+
+        class limas_segi_empat {
+            luas_alas
+            tinggi
+            volume(){
+                return 1/3 * this.luas_alas * this.tinggi;
+            }
+        }    
+            var limas_segi_empat1 = new limas_segi_empat();
+            limas_segi_empat1.luas_alas = 4
+            limas_segi_empat1.tinggi = 6
+
+            document.write("volume limas_segi_empat : " + limas_segi_empat1.volume() + '<br />');
+
+        class tabung {
+            π
+            jari_jari
+            tinggi
+            volume(){
+                return this.π * this.jari_jari * this.tinggi;
+            }
+        }    
+            var tabung1 = new tabung();
+            tabung1.π = 3
+            tabung1.jari_jari = 8
+            tabung1.tinggi = 5
+
+            document.write("volume tabung : " + tabung1.volume() + '<br />');
+    </script>
+</body>
+</html>
